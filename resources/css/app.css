@@ -1,0 +1,677 @@
+@import "./home.css";
+@import "./introduction.css";
+@import "./contact.css";
+@import "./products.css";
+@import "./products-designed.css";
+@import "./products-design-form.css";
+@import "./product-detail.css";
+@import "./cart.css";
+@import "./account.user.info.css";
+@import "./account.user.carts.css";
+@import "./account.user.receivers.css";
+@import "./account.staff.info.css";
+@import "./dashboard.home.css";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+}
+
+.top-bg{
+    min-height: 500px;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+:root{
+    --header-height: 86px;
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled]{
+    background-color: rgba(246, 246, 246, 0.826) !important;
+}
+
+/* Header */
+
+header.user-header{
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 99;
+    background-color: #FFF4F5;
+    height: var(--header-height);
+}
+
+header.user-header.header-transparent{
+    position: absolute;
+    width: 100%;
+    background-color: unset !important;
+}
+
+header.user-header nav{
+    margin-left: 2%;
+}
+
+header.user-header nav .logo{
+    margin-right: 120px;
+}
+
+header.user-header nav .links li{
+    margin-right: 40px;
+}
+
+header.user-header nav .links li:hover a{
+    opacity: .8;
+}
+
+header.user-header nav .links li a,
+header.user-header nav .icons li a{
+    color: #5169BB !important;
+}
+
+header.user-header nav .icons li a:hover{
+    color: #8aa3f6 !important;
+}
+
+header.user-header nav .icons li{
+    margin-right: 22px;
+}
+
+header.user-header nav li a.active{
+    color: #FF3468 !important;
+}
+
+header #account_function{
+    width: 150px;
+    font-weight: 100;
+    font-size: 16px;
+    top: 100%;
+}
+
+header #account_function a,
+header #account_function button{
+    width: 100%;
+    color: inherit !important;
+    padding: 8px;
+    padding-left: 16px;
+    border: none;
+    background-color: unset !important;
+}
+
+header #account_function li:hover{
+    color: #fff !important;
+    background-color: #FF88A6 !important;
+}
+
+header .username-links:hover #account_function{
+    display: block !important;
+}
+
+header.user-header ul li a.username{
+    color: #FF9A3D !important;
+}
+
+header.user-header ul li a.username:hover{
+    color: #ffc186 !important;
+}
+
+header.user-header #search{
+    max-width: 160px;
+}
+
+header.user-header .submenu{
+    display: none;
+    padding: 12px 64px;
+}
+
+header.user-header .menu:hover .submenu{
+    display: block !important;
+    position: absolute;
+    z-index: 9999;
+    width: 100vw;
+    left: -28px;
+    margin-top: -8px;
+}
+
+header.user-header .submenu ul{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px 0 16px 72px;
+    color: rgb(90, 90, 90) !important;
+    box-shadow: 4px 4px 10px #ccc, -4px -4px 10px #ccc;
+}
+
+header.user-header .menu .submenu ul li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 20%;
+}
+
+header.user-header .menu .submenu ul li a:hover{
+    color: rgb(251, 122, 185) !important;
+}
+
+header.user-header .menu .submenu ul li a{
+    color: inherit !important;
+    font-weight: 500;
+}
+
+/* Footer */
+
+footer{
+    font-size: 18px;
+    color: #3B4598;
+}
+
+footer .footer-links .col:first-child{
+    justify-content: center;
+    margin-right: 80px;
+}
+
+footer .footer-links .col .row{
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+footer .footer-links .col .row.heading{
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+footer .footer-links .col:not(.col:first-child) a,
+footer .footer-links .col:not(.col:first-child) span{
+    padding: 0 !important;
+    color: inherit;
+    text-align: left !important;
+}
+
+footer .footer-links{
+    padding: 32px 0 16px 24px !important;
+    background-color: #FFF4F5;
+}
+
+footer .copyright{
+    background: #7281FB;
+    color: #fff;
+}
+
+/* Components */
+
+/* Breadcrumb */
+
+.breadcrumb-custom.component{
+    margin: 16px 0 16px;
+    margin-left: 40px !important;
+}
+
+.breadcrumb-custom.component .breadcrumb-item a{
+    color: #5169BB;
+}
+
+.breadcrumb-custom.component .breadcrumb-item.active{
+    color: #FF3468;
+}
+
+/* Product tag */
+
+.tag.component{
+    display: inline-block;
+}
+
+.tag.component .badge button{
+    border: none !important;
+}
+
+.tag.component .badge{
+    color: #808eff !important;
+    border-color: #808eff !important;
+    border: 1px solid;
+}
+
+.tag.component>.badge{
+    background-color: #eaf3fc;
+    box-shadow: 1px 1px 2px #d5d5d5;
+}
+
+/* Product item */
+
+.product-item-container.component{
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.product-item.component{
+    border-color: transparent;
+    border-radius: 16px !important;
+    text-align: center;
+    box-shadow: 2px 4px 4px rgb(206, 206, 206), 0px 0px 2px rgb(222, 222, 222);
+    font-size: 18px;    
+}
+
+.product-item.component img{
+    height: 150px;
+}
+
+.product-item.component:hover{
+    transform: scale(1.03);
+    transition: transform .2s linear;
+}
+
+.product-item.component .stars{
+    color: #FFE600;
+    margin-top: 4px;
+}
+
+.product-item.component .old-price{
+    text-decoration: line-through;
+}
+
+.product-item.component .sale{
+    display: block;
+    border-style: solid;
+    border-color: #FF6C87;
+    border-width:15px 15px 12px 76px ;
+    border-right-color: transparent;
+    position: absolute;
+    left: -26px;
+}
+
+.product-item.component .sale::before{
+    position: absolute;
+    right: 67px;
+    top: 12px;
+    display: block;
+    content: "";
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0px 9px 4px 0px ;
+    border-right-color: #D8576E;
+}
+
+.product-item.component .sale span{
+    display: block;
+    min-width: 80px;
+    right: -1px;
+    bottom: -8px;
+    font-size: 14px;
+}
+
+/* Product comment */
+
+.comment.component{
+    border-radius: 8px;
+    padding: 16px 20px;
+    border: 1px solid #FFBFCB;
+    background-color: #fffafb;
+    color: #727272;
+}
+
+.comment.component .stars{
+    color: #FFE600;
+}
+
+.comment.component .comment-imgs{
+    flex-wrap: wrap;
+}
+
+.comment.component .comment-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 8%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin: 4px;
+}
+
+.comment.component .comment-evaluation{
+    flex-direction: column;
+}
+
+.comment.component .comment-evaluation span:first-child{
+    font-weight: 500;
+}
+
+.comment.component .bar{
+    border-right: 2px solid #FFBFCB;
+    height: 100%;
+}
+
+/* Function button */
+
+.function-btn.component>button{
+    padding: 4px 16px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.function-btn.component button:not(button[disabled]):active{
+    opacity: .5;
+}
+
+/* Flower Used Item */
+
+.flower-used-item.component{
+    box-shadow: -2px -2px 4px #ccc, 2px 2px 4px #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+/* Date picker */
+
+.date-picker.component{
+    padding: 6px 16px;
+    border-radius: 6px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.date-picker.component::-webkit-calendar-picker-indicator {
+    padding-left: 80%;
+    background-image: url('../imgs/icon.png') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+
+/* Account user menu */
+
+.menu-user.component{
+    box-shadow: 2px 2px 4px #ccc, -1px -1px 1px #ccc;
+    border-radius: 6px;
+    position: sticky;
+    top: 32px;
+}
+
+.menu-user.component li{
+    color: #000;
+    transition: all .08s linear;
+}
+
+.menu-user.component li a,
+.menu-user.component li button{
+    padding: 8px 0;
+    padding-left: 22px;
+}
+
+.menu-user.component li button{
+    border: none;
+    background-color: unset;
+    color: inherit;
+}
+
+.menu-user.component li:first-child{
+    border-radius: 6px 6px 0 0;
+}
+
+.menu-user.component li:last-child{
+    border-radius: 0 0 6px 6px;
+}
+
+.menu-user.component li a{
+    width: 100%;
+    display: block; 
+    color: inherit;
+}
+
+.menu-user.component li.active{
+    background-color: #FF88A6;
+    color: #fff;
+}
+
+.menu-user.component li:hover{
+    background-color: #ffafc3;
+    color: #fff;
+}
+
+/* Account function */
+
+.account-function{
+    box-shadow: 2px 2px 4px #ccc, -1px -1px 1px #ccc;
+    border-radius: 8px;
+    padding: 24px 32px;
+}
+
+/* User order */
+
+.user-order-item.component{
+    border: 1px solid rgb(81, 81, 81);
+    border-radius: 8px;
+}
+
+.user-order-item.component .seemore a{
+    text-decoration: underline;
+    color: #3f4fdd;
+}
+
+.user-order-item.component span:last-child{
+    color: #FF8080;
+}
+
+.order-status.component .text-warning{
+    color: #FF9A3D !important;
+}
+
+.order-status.component .text-success{
+    color: #09AD4A !important;
+}
+
+.order-status.component select{
+    transform: translate(0, -20%);
+}
+
+.user-order-item label{
+    min-width: 100px;
+}
+
+/* Receiver info */
+
+.receiver-info.component{
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px #ccc, -1px -1px 2px #ccc;
+    padding: 16px 24px;
+}
+
+.receiver-info.component input,
+.receiver-info.component select{
+    color: #FF8080;
+}
+
+/* User events frame */
+
+.user-event-frame.component{
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px #ccc, -1px -1px 2px #ccc;
+    padding: 16px 24px;
+}
+
+/* Event */
+
+.event.component{
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px #ccc, -1px -1px 2px #ccc;
+    padding: 16px 24px;
+}
+
+.event.component input,
+.event.component select{
+    color: #FF8080;
+}
+
+/* Login and register form */
+
+.log-form{
+    padding: 16px 32px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 60%;
+    margin-top: 32px;
+}
+
+/* Account staff function filter */
+
+.account-staff-funtion-filter.component button:active{
+    background-color: #ffa7a7 !important;
+}
+
+/* Short comment*/
+
+.short-commnet.component{
+    border: 1px solid #FFBFCB;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff9fa;
+    color: rgb(86, 86, 86);
+}
+
+.short-commnet.component .stars{
+    color: #FFE600;
+}
+
+/* Admin dashboard */
+
+table {
+    background-color: #fff;
+}
+
+table th{
+    background-color: #00140D !important;
+}
+
+table button{
+    color: #00140D !important;
+    font-size: 20px;
+    border: none;
+    background-color: unset;
+}
+
+table button.delete-btn{
+    color: #FF4F4F !important;
+}
+
+table td img{
+    border-radius: 4px;
+}
+
+table td img.round{
+    border-radius: 50%;
+}
+
+
+/* Admin header */
+
+header.admin-header{
+    color: #002C45;
+    box-shadow: -1px -1px 6px #ccc;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header.admin-header a{
+    color: inherit !important;
+} 
+
+header.admin-header nav.navbar{
+    margin:0 32px;
+}
+
+header.admin-header button.search-btn{
+    border: none !important;
+    background-color: unset !important;
+}
+
+header.admin-header a.username{
+    color: #FF9A3D !important;
+}
+
+header.admin-header a.username:hover{
+    color: #ffc186 !important;
+}
+
+header.admin-header #account_function li:hover{
+    color: #fff !important;
+    background-color: #002C45 !important;
+}
+
+/* dashboard menu */
+
+.dashboard-menu.component{
+    background-color: #002C45;
+    height: 100vh !important;
+    color: #cbcbcb;
+    padding-bottom: 164px !important;
+    position: fixed;
+    overflow-y: scroll;
+    width: 16.66666667% !important;
+}
+
+.dashboard-menu.component::-webkit-scrollbar{
+    display: none;
+}
+
+.dashboard-menu.component{
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}
+
+.dashboard-menu.component ul{
+    background-color: #002C45;
+}
+
+.dashboard-menu.component li.active{
+    color: #fff;
+    font-weight: 500;
+}
+
+.dashboard-menu.component li.active a{
+    padding-right: 21px;
+}
+
+.dashboard-menu.component ul{
+    border-radius: unset !important;
+}
+
+.dashboard-menu.component ul li:not(li.collapse, li.collapsing):hover{
+    background-color: #fff;
+    color: #002C45;
+}
+
+
+.dashboard-menu.component ul li a{
+    display: block;
+    color: inherit;
+    padding:10px 24px;
+}
+
+.dasshboard-badge.component{
+   box-shadow: 6px 2px 2px #ccc, 14px 2px 2px rgb(224, 224, 224);
+}
+ 

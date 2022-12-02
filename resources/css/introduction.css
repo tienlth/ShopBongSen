@@ -1,0 +1,76 @@
+.introduction-page{
+    padding: 0 40px 0;
+}
+
+.introduction-page .banner img{
+    width: 100%;
+}
+
+.introduction-page .breadcrumb-custom.component{
+    margin-left: 0 !important;
+}
+
+.introduction-page .intro{
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.introduction-page .product-intro .info{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 16px 16px 16px 128px;
+    font-size: 18px;
+    font-weight: 500;
+}   
+
+.introduction-page .info .old-price{
+    text-decoration: line-through;
+}
+
+.introduction-page .product-intro{
+    margin: 28px 0;
+}
+
+.introduction-page .product-intro.reverse{
+    flex-direction: row-reverse;
+}
+
+.introduction-page .product-intro.reverse .info{
+    padding-left: 48px;
+    padding-right: 128px;
+}
+
+.introduction-page .statistical{
+    color: #FF3468;
+}
+
+.introduction-page .statistical .data{
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 4px;
+    font-weight: 500;
+}
+
+.introduction-page .statistical .item{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction-page #statistical-slide button{
+    color: #FF3468;
+    font-size: 20px;
+}
+
+.introduction-page #statistical-slide button:first-child{
+    justify-content: flex-start;
+}
+
+.introduction-page #statistical-slide button:last-child{
+    justify-content: flex-end;
+}

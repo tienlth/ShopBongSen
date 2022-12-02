@@ -1,0 +1,85 @@
+.home-page{
+    font-size: 20px;
+}
+
+.home-page #home-slide .carousel-item{
+    min-height: 264px;
+    width: 500px;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.home-page #home-slide .carousel-inner{
+    margin-left: 30%;
+}
+
+.home-page .badge {
+    border-radius: 16px;
+    padding: 8px 16px;
+    background-color: #CC5DFE !important;
+}
+
+.home-page #home-slide button {
+    border-radius: 8px;
+}
+
+.home-page .info{
+    padding: 64px 180px;
+}
+
+.home-page .info .col{
+    text-align: justify;
+}
+
+.home-page .info .col:first-child{
+    margin-right: 120px;
+}
+
+.home-page .info .col > div:first-child,
+.home-page .info h5{
+    text-align: center;
+}
+
+.home-page .info h5{
+    padding: 16px 0;
+}
+
+.home-page .products{
+    margin-bottom: 48px;
+}
+
+.home-page .product-list .wrapper{
+    background-color: #FFF4F5;
+    border-radius: 16px;
+    margin: 12px 24px 36px;
+    padding: 28px 24px;
+}
+
+.home-page .product-list .list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-page .product-list button.seemore{
+    background-color: #6F7CFF;
+    border-radius: 12px;
+    border-color: transparent;
+    padding: 8px 16px;
+}
+
+.home-page .services{
+    background-color: #DBE3FF;
+}
+
+.home-page .services .col .row span{
+    width: unset !important;
+}
+
+.home-page .services .col .row{
+    margin-top: 24px;
+    align-items: center;
+}
+
+.home-page .services .row .col{
+    padding-left: 100px !important;
+}

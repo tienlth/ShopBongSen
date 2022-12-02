@@ -1,0 +1,77 @@
+.products-page .product-filter-contain{
+    padding: 0 40px !important;
+}
+
+.products-page .product-filter{
+    box-shadow: 2px 2px 4px rgb(205, 205, 205), -1px -1px 1px rgb(205, 205, 205);
+    padding: 16px 32px;
+    border-radius: 4px;
+}
+
+.products-page .product-filter .search button{
+    border: none !important;
+    font-size: 24px;
+}
+
+.products-page .product-filter-btn{
+    background-color: #fe9a9a !important;
+    box-shadow: 1px 1px 3px rgb(185, 185, 185) !important;
+}
+
+.products-page .tags{
+    padding-left: 48px;
+    margin-bottom: 24px;
+}
+
+.products-page .products-list{
+    padding: 24px 40px;
+    margin-bottom: 32px;
+    background-color: #FFF6F7;
+    flex-wrap: wrap;
+}
+
+.products-page span.relative.z-0.inline-flex.shadow-sm.rounded-md{
+    display: flex !important;
+}
+
+.products-page span.relative.z-0.inline-flex.shadow-sm.rounded-md a:first-child,
+.products-page span.relative.z-0.inline-flex.shadow-sm.rounded-md span:first-child,
+.products-page span.relative.z-0.inline-flex.shadow-sm.rounded-md span:last-child,
+.products-page span.relative.z-0.inline-flex.shadow-sm.rounded-md a:last-child{
+    display: block;
+    width: 45px !important;
+    height: 45px !important;
+}
+
+.products-page span.relative.z-0.inline-flex.shadow-sm.rounded-md a:first-child svg,
+.products-page span.relative.z-0.inline-flex.shadow-sm.rounded-md a:last-child svg{
+    transform: scale(2.3);
+}
+
+.products-page span.relative.z-0.inline-flex.shadow-sm.rounded-md a{
+    margin: 0 4px;
+    padding: 8px 16px !important;
+    font-size: 18px;
+    color: #2e3aae;
+    border-color: #5169BB;
+    border: 1px solid #5169BB !important;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.products-page span.relative.z-0.inline-flex.shadow-sm.rounded-md span[aria-current=page] span{
+    padding: 8px 16px !important;
+    margin: 0 4px;
+    height: 46px;
+    display: block;
+    background-color: #5169BB !important;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+nav[role=navigation] div:first-child{
+    display: none;
+}

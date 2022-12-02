@@ -1,0 +1,53 @@
+.contact-page .breadcrumb-custom{
+    position: absolute;
+    top: var(--header-height);
+    margin-left: 40px !important;
+}
+
+.contact-page .contact-info {
+    color: #444648;
+    width: 43%;
+    margin-top: 160px;
+    padding-bottom: 48px;
+}
+
+.contact-page .contact-info .pink{
+    color: #FE47AA;
+}
+
+.contact-page .contact-info .blue{
+    color: #294594;
+}
+
+.contact-page .contact-info .info{
+    text-align: left !important;
+    margin-left: 57%;
+    transform: translate(-50%);
+}
+
+.contact-page .contact-info .social-network{
+    font-size: 28px;
+}
+
+.contact-page .social-network a{
+    color: inherit;
+    margin-right: 12px;
+    padding: 2px 4px;
+}
+
+.contact-page .contact-form{
+    margin-top: 32px;
+    margin-bottom: 48px;
+    flex-direction: column;
+}
+
+.contact-page .contact-form form {
+    width: 60%;
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+.contact-page .contact-form button[type=submit]{
+    background-color: #FF5EAB;
+    min-width: 80px;
+}

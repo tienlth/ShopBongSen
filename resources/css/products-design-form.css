@@ -1,0 +1,67 @@
+.design-form-page{
+}
+
+.design-form-page .design-form-container{
+    margin: 0 40px;
+    margin-bottom: 32px;
+    color: hsl(0, 0%, 48%);
+    box-shadow: -1px -1px 1px #ccc, 2px 2px 4px #ccc;
+    border-radius: 4px;
+}
+
+.design-form-page .design-form-container .title{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 28px;
+}
+
+.design-form-page .dash{
+    border-bottom: 2px solid rgb(230, 229, 229);
+}
+
+.design-form-page .design-form{
+    padding: 24px 64px;
+}
+
+.design-form-page .tags{
+    flex-wrap: wrap;
+}
+
+.design-form-page .flower-used{
+    color: hsl(0, 0%, 48%);
+    box-shadow: -1px -1px 1px #ccc, 2px 2px 4px #ccc;
+    border-radius: 4px;
+}
+
+.design-form-page .flower-used .function{
+    padding: 8px 16px;
+}
+
+.design-form-page .flower-used .list{
+    padding: 16px 28px;
+}
+
+.design-form-page .design-form button[type=submit]{
+    background-color: #FFAAAA;
+    box-shadow: 2px 2px 4px #ccc;
+}
+
+.design-form-page .infomation-comfirm{
+    padding: 16px 64px;
+}
+
+.design-form-page .product-img{
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.design-form-page .infomation-comfirm .price .value{
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    padding: 8px 16px;
+    height: 48px;
+}

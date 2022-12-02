@@ -1,0 +1,1 @@
+@error($field)<div class="text-danger error-mess text-start">{{ $message }}</div>@enderror

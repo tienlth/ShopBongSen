@@ -1,0 +1,135 @@
+.product-detail-page{
+}
+
+.product-detail-page .content{
+    margin: 0 52px;
+}
+
+.product-detail-page .info-container{
+    margin: 16px 0;
+}
+
+.product-detail-page .info-container .product-sub-img{
+    height: 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ccc;
+}
+
+.product-detail-page .info .old-price{
+    text-decoration: line-through;
+    color: #A5A5A5;
+}
+
+.product-detail-page .info .price{
+    color: #FF0000;
+}
+
+.product-detail-page .info .old-price, 
+.product-detail-page .info .price{
+    font-size: 18px;
+}
+
+.product-detail-page .stars{
+    color: #FFE600;
+}
+
+
+.product-detail-page .menu label{
+    border-color: #FF6B8E !important;
+    color: #FF6B8E !important;
+}
+
+.product-detail-page .menu input:checked + label{
+    background-color: #FF6B8E !important;
+    color: #fff !important;
+}
+
+.product-detail-page .info-list .field{
+    font-weight: 500;
+}
+
+.product-detail-page .menu-content{
+    color: #787878;
+}
+
+.product-detail-page .menu .product-include ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-detail-page .classification .tags{
+    flex-wrap: wrap;
+}
+
+.product-detail-page .evaluation .stars i{
+    margin-right: 16px;
+    font-size: 28px;
+}
+
+.product-detail-page .evaluation label,
+.product-detail-page .comment label{
+    color: #9d9b9b;
+}
+
+.product-detail-page .buy-method .quantity button{
+    font-size: 18px;
+    padding: 12px 0;
+    background-color: #fef9fa;
+    color: #FF6C87;
+}
+
+.product-detail-page .buy-method .quantity button:active{
+    background-color: #fff;
+}
+
+.product-detail-page .buy-method .quantity .value,
+.product-detail-page .buy-method .quantity button{
+    border: 2px solid #FF6C87;
+}
+
+.product-detail-page .buy-method .quantity .value{
+    border-left: none;
+    border-right: none;
+    outline: none !important;
+}
+
+.product-detail-page .buy-method .quantity input::-webkit-outer-spin-button,
+.product-detail-page .buy-method .quantity input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.product-detail-page .buy-method .add-cart-btn button{
+    font-size: 20px;
+    padding: 8px 16px !important;
+    background-color: #FF6A6A;
+}
+
+.product-detail-page .buy-method .contact-btn button{
+    font-size: 20px;
+    padding: 8px 16px !important;
+    background-color: #2CC1C9;
+}
+
+.product-detail-page .uploaded-imgs{
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.product-detail-page .uploaded-img{
+    border-radius: 8px;
+    margin: 0 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 160px;
+    width: 15%;
+    border: 1px solid rgb(233, 233, 233);
+}
+
+.product-detail-page .evaluate-btn{
+    background-color: #FF6A6A !important;
+    box-shadow: 2px 2px 2px #ccc;
+}

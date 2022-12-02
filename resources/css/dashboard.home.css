@@ -1,0 +1,26 @@
+.dashboard-home-page .table-contain{
+    height: 410px !important;
+    overflow-y: scroll;
+}
+
+.dashboard-home-page .table-contain::-webkit-scrollbar{
+    display: none;
+}
+
+.dashboard-home-page .table-contain{
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}
+
+.dashboard-home-page table td{
+    color: #002C45 !important;
+}
+
+.dashboard-home-page table thead{
+    top: 0;
+}
+
+.dashboard-home-page table thead th{
+    background-color: #002C45 !important;
+}
+

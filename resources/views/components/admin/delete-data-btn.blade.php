@@ -1,0 +1,1 @@
+<button type="button" id={{$id}} data-bs-toggle="modal" data-bs-target="#delete-modal" class="delete-btn"><i class="fa-regular fa-trash-can"></i><button>
